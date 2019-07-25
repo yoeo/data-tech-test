@@ -10,9 +10,9 @@ an interactive big-data development environment.
 
 ### Requirements:
 
-* Linux or Windows operating system are recommended.
-  If you use MacOS you can try the Linux set-up instructions.
-* Ensure that Java 7 (1.7) or later is installed on your system.
+* Linux operating system is recommended.
+  Should also work on Windows and Mac OS but we didn't test that.
+* Java 7 or later is installed on your system.
   [Java install instructions](https://java.com/en/download/help/download_options.xml)
 * Git is installed on your system.
   [Git install instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
