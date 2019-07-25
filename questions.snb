@@ -24,12 +24,12 @@
       "id" : "0B818F9ED91F4535936EB421E0AFD0CE"
     },
     "cell_type" : "markdown",
-    "source" : "# Data tech test\n\n## Workflow\n\n* Run each cell of this notebook by clicking on the play button ‣ on the top-right.\n* Read carefully the questions and replace the _[INSERT YOUR CODE HERE]_ placeholders with your answers.\n* Test and fix your code then download the notebook as a PDF file from the menu option _File → Download as → PDF (.pdf)_.\n* **Send us the PDF file by email**.\n\nYou can write the answers in SQL (Hive SQL dialect. Documentation here https://hive) or in Scala/Spark (documentation here https://spark.apache.org/docs/latest/quick-start.html).\n\n"
+    "source" : "# Data tech test\n\n## Workflow\n\n* Run each cell of this notebook by clicking on the play button ‣ on the top-right.\n* Read carefully the questions and replace the _[INSERT YOUR CODE HERE]_ placeholders with your answers.\n* Explain with few words your answers in the _[DOUBLE-CLICK TO ADD COMMENTS HERE]_ cells.\n* Test and fix your code, then download the notebook as a PDF file from the menu option: _File → Download as → PDF (.pdf)_.\n* **Send us the PDF file by email**.\n\nYou can write the answers in SQL (Hive SQL dialect. Documentation here https://cwiki.apache.org/confluence/display/Hive/Tutorial)\nor in Scala/Spark (documentation here https://spark.apache.org/docs/latest/quick-start.html).\n\n"
   }, {
     "metadata" : {
       "trusted" : true,
       "input_collapsed" : false,
-      "collapsed" : false,
+      "collapsed" : true,
       "id" : "EEBF8322B26840958A53E0BBDCC93219"
     },
     "cell_type" : "code",
@@ -40,7 +40,7 @@
       "id" : "C42F69659A584CC39E3DE3FBE32494D1"
     },
     "cell_type" : "markdown",
-    "source" : "## Data\n\nThere are two tables:\n* the **users** table that contains the information about users of the service\n* and the **streams** table where the streams (song played by the users) are stored.\n\n> **Important**:\n>\n> the _users.registration_ and _streams.stream_time_ fields are dates formatted as Unix time stamps in milliseconds,\n> for example `1559347200000` represents the following date _2019/06/01 00:00:00 UTC+0_\n\nYou can see extracts of both tables content bellow:\n"
+    "source" : "## Data\n\nThere are two data tables:\n* the **users** table that contains the information about the users of the service\n* and the **streams** table where the streams (song played by the users) are stored.\n\n> **Important**:\n>\n> the _users.registration_ and _streams.stream_time_ fields are dates formatted as Unix time stamps in milliseconds,\n> for example `1559347200000` represents the following date _2019/06/01 00:00:00 UTC+0_\n\nYou can see extracts of both tables content bellow:\n"
   }, {
     "metadata" : {
       "id" : "800A74CD318C4B8F8D7542331FBB106F"
@@ -51,7 +51,7 @@
     "metadata" : {
       "trusted" : true,
       "input_collapsed" : false,
-      "collapsed" : false,
+      "collapsed" : true,
       "presentation" : {
         "tabs_state" : "{\n  \"tab_id\": \"#tab787125986-0\"\n}",
         "pivot_chart_state" : "{\n  \"hiddenAttributes\": [],\n  \"menuLimit\": 200,\n  \"cols\": [],\n  \"rows\": [],\n  \"vals\": [],\n  \"exclusions\": {},\n  \"inclusions\": {},\n  \"unusedAttrsVertical\": 85,\n  \"autoSortUnusedAttrs\": false,\n  \"inclusionsInfo\": {},\n  \"aggregatorName\": \"Count\",\n  \"rendererName\": \"Table\"\n}"
@@ -71,7 +71,7 @@
     "metadata" : {
       "trusted" : true,
       "input_collapsed" : false,
-      "collapsed" : false,
+      "collapsed" : true,
       "presentation" : {
         "tabs_state" : "{\n  \"tab_id\": \"#tab230582585-0\"\n}",
         "pivot_chart_state" : "{\n  \"hiddenAttributes\": [],\n  \"menuLimit\": 200,\n  \"cols\": [],\n  \"rows\": [],\n  \"vals\": [],\n  \"exclusions\": {},\n  \"inclusions\": {},\n  \"unusedAttrsVertical\": 85,\n  \"autoSortUnusedAttrs\": false,\n  \"inclusionsInfo\": {},\n  \"aggregatorName\": \"Count\",\n  \"rendererName\": \"Table\"\n}"
@@ -92,12 +92,12 @@
       "id" : "1A78A8E23B254BBE93C40954CF33E780"
     },
     "cell_type" : "markdown",
-    "source" : "## Question 1: Simple selection\n\nList the IDs of all the users from France (FR)\n"
+    "source" : "## Question 1: Simple filtering\n\nList the IDs of all the users from France (FR)\n"
   }, {
     "metadata" : {
       "trusted" : true,
       "input_collapsed" : false,
-      "collapsed" : false,
+      "collapsed" : true,
       "id" : "E80F97A018B546539F1019FEE011D5C5"
     },
     "cell_type" : "code",
@@ -108,18 +108,18 @@
       "id" : "40E49E1F668547808D3CE4DB51623993"
     },
     "cell_type" : "markdown",
-    "source" : "...\n\n[YOU CAN DOUBLE-CLICK TO ADD YOUR COMMENTS HERE]\n\n..."
+    "source" : "...\n\n[DOUBLE-CLICK TO ADD YOUR COMMENTS HERE]\n\n..."
   }, {
     "metadata" : {
       "id" : "715908BA83AB4A28AEA5FE583A6F850A"
     },
     "cell_type" : "markdown",
-    "source" : "\n## Question 2: Complex selection\n\nList the IDs of all the users who match the following criteria:\n* consent to receive messages (see _consent_ field)\n* don't use a _@gmail.com_ email address\n* have registered before 2019/06/15\n* and never streamed"
+    "source" : "\n## Question 2: Multiple filters\n\nList the IDs of all the users who match the following criteria:\n* consent to receive messages (see _consent_ field)\n* don't use a _@gmail.com_ email address\n* have registered before 2019/06/15\n* and never streamed"
   }, {
     "metadata" : {
       "trusted" : true,
       "input_collapsed" : false,
-      "collapsed" : false,
+      "collapsed" : true,
       "id" : "5DF9A2BC117A4AD48024AB9F6A19BAFD"
     },
     "cell_type" : "code",
@@ -130,7 +130,7 @@
       "id" : "40E49E1F668547808D3CE4DB51623993"
     },
     "cell_type" : "markdown",
-    "source" : "...\n\n[YOU CAN DOUBLE-CLICK TO ADD YOUR COMMENTS HERE]\n\n..."
+    "source" : "...\n\n[DOUBLE-CLICK TO ADD YOUR COMMENTS HERE]\n\n..."
   }, {
     "metadata" : {
       "id" : "E6ACAFC6CA7548D2B97C9787B6FAC868"
@@ -141,7 +141,7 @@
     "metadata" : {
       "trusted" : true,
       "input_collapsed" : false,
-      "collapsed" : false,
+      "collapsed" : true,
       "id" : "C61C26F59FA8407AA67DE66538A08C1D"
     },
     "cell_type" : "code",
@@ -152,18 +152,18 @@
       "id" : "40E49E1F668547808D3CE4DB51623993"
     },
     "cell_type" : "markdown",
-    "source" : "...\n\n[YOU CAN DOUBLE-CLICK TO ADD YOUR COMMENTS HERE]\n\n..."
+    "source" : "...\n\n[DOUBLE-CLICK TO ADD YOUR COMMENTS HERE]\n\n..."
   }, {
     "metadata" : {
       "id" : "B27F10FFB08D4BDB8CFC6BA7097BE428"
     },
     "cell_type" : "markdown",
-    "source" : "\n## Question 4: Understand business requirements\n\nThe artists promotion team would like to send promotion messages for the artist with ID = 3.\n\nHere are the business requirements:\n* Users who don't consent to receive messages should not receive this promotion message.\n* Users who already know well and stream often the artist will not find the message useful.\n* The promoted artist has the same style as the artists with ID = 5 and ID = 7. Users who like them will be interested by this promotion message.\n* The promotion message is only available in English and Arabic language, not in French.\n\nWhich criteria will you propose to select the users who will receive the promotion message ?"
+    "source" : "\n## Question 4: Understand business requirements\n\nThe artists promotion team would like to send promotion messages for the artist with ID = 3.\n\nHere are the business requirements:\n* Users who don't consent to receive messages should not receive this promotion message.\n* Users who already know well and stream often the artist will not find the message useful.\n* The promoted artist has the same style as the artists with ID = 5 and ID = 7. Users who like them will be interested in this promotion message.\n* The promotion message is only available in English and Arabic language, not in French.\n\nWhich criteria will you propose to select the users who will receive the promotion message ?"
   }, {
     "metadata" : {
       "trusted" : true,
       "input_collapsed" : false,
-      "collapsed" : false,
+      "collapsed" : true,
       "id" : "435AD1562FBA47FB917733D1B067F19D"
     },
     "cell_type" : "code",
@@ -174,7 +174,7 @@
       "id" : "40E49E1F668547808D3CE4DB51623993"
     },
     "cell_type" : "markdown",
-    "source" : "...\n\n[YOU CAN DOUBLE-CLICK TO ADD YOUR COMMENTS HERE]\n\n..."
+    "source" : "...\n\n[DOUBLE-CLICK TO ADD YOUR COMMENTS HERE]\n\n..."
   }, {
     "metadata" : {
       "id" : "45F02E909BD743279731FEA2107BDE95"
