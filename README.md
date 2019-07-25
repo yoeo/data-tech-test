@@ -65,7 +65,7 @@ http://localhost:9000/notebooks/data-tech-test/questions.snb
 
 If you are not able to set-up Spark Notebook, you can still pass the test.
 You can **send by email the answers** to the questions asked this PDF document:
-https://github.com/yoeo/data-tech-test/questions.pdf
+https://github.com/yoeo/data-tech-test/blob/master/questions.pdf
 
 ---
 
